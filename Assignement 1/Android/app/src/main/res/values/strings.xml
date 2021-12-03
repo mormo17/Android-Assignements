@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="computer_label">Computer</string>
+    <string name="player_label">Player</string>
+    <string name="initial_score">0</string>
+    <string name="rock_button_value">ROCK</string>
+    <string name="paper_button_value">PAPER</string>
+    <string name="scissors_button_value">SCISSORS</string>
+    <string name="greeting_label">Press any button to start</string>
+</resources>
