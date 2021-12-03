@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_night"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/flag_icon_georgia"
+        android:layout_width="@dimen/flag_icon_width"
+        android:layout_height="@dimen/flag_icon_height"
+        android:layout_marginTop="@dimen/flag_icons_offset_from_top"
+        app:layout_constraintEnd_toStartOf="@+id/flag_icon_uk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/georgia"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/flag_icon_uk"
+        android:layout_width="@dimen/flag_icon_width"
+        android:layout_height="@dimen/flag_icon_height"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/flag_icon_jamaica"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_icon_georgia"
+        app:layout_constraintTop_toTopOf="@+id/flag_icon_georgia"
+        app:srcCompat="@drawable/uk" />
+
+    <ImageView
+        android:id="@+id/flag_icon_jamaica"
+        android:layout_width="@dimen/flag_icon_width"
+        android:layout_height="@dimen/flag_icon_height"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_icon_uk"
+        app:layout_constraintTop_toTopOf="@+id/flag_icon_uk"
+        app:srcCompat="@drawable/jamaica" />
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/city_name_offset_from_flag"
+        android:text="@string/initial_city"
+        android:textColor="@color/white"
+        android:textSize="@dimen/city_name_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag_icon_uk" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/details_layout_offset_from_left"
+        android:layout_marginLeft="@dimen/details_layout_offset_from_left"
+        android:layout_marginTop="@dimen/details_layout_offset_from_top"
+        android:layout_marginEnd="@dimen/details_layout_offset_from_right"
+        android:layout_marginRight="@dimen/details_layout_offset_from_right"
+        app:layout_constraintBottom_toTopOf="@+id/tab_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_name" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tab_layout_height"
+        android:backgroundTint="@color/tab_layout_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

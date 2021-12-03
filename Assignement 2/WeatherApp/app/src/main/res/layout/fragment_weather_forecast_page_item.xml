@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="@dimen/weather_forecast_page_item_height">
+
+    <TextView
+        android:id="@+id/second_page_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weather_forecast_page_item_date_offset_from_left"
+        android:layout_marginLeft="@dimen/weather_forecast_page_item_date_offset_from_left"
+        tools:text="@string/default_date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/weather_forecast_page_item_date_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/second_page_item_weather_icon"
+        android:layout_width="@dimen/weather_forecast_page_item_weather_icon_width"
+        android:layout_height="@dimen/weather_forecast_page_item_weather_icon_height"
+        android:layout_marginStart="@dimen/weather_forecast_page_item_weather_icon_offset_from_left"
+        android:layout_marginLeft="@dimen/weather_forecast_page_item_weather_icon_offset_from_left"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toEndOf="@+id/second_page_item_date"
+        app:layout_constraintTop_toTopOf="@+id/second_page_item_date" />
+
+    <TextView
+        android:id="@+id/second_page_item_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weather_forecast_page_item_temperature_offset_from_left"
+        android:layout_marginLeft="@dimen/weather_forecast_page_item_temperature_offset_from_left"
+        tools:text="@string/default_temperature"
+        android:textColor="@color/white"
+        android:textSize="@dimen/weather_forecast_page_item_temperature_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/second_page_item_weather_icon"
+        app:layout_constraintTop_toTopOf="@+id/second_page_item_weather_icon" />
+
+    <TextView
+        android:id="@+id/second_page_item_weather_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weather_forecast_page_item_weather_desc_offset_from_left"
+        android:layout_marginLeft="@dimen/weather_forecast_page_item_weather_desc_offset_from_left"
+        tools:text="@string/default_weather_desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/weather_forecast_page_item_weather_desc_size"
+        app:layout_constraintStart_toEndOf="@+id/second_page_item_temperature"
+        app:layout_constraintTop_toTopOf="@+id/second_page_item_temperature" />
+</androidx.constraintlayout.widget.ConstraintLayout>

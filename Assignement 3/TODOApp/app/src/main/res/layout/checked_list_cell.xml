@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- todo item check box -->
+    <CheckBox
+        android:id="@+id/todo_list_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_item_offset"
+        android:layout_marginLeft="@dimen/list_item_offset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/GrayCheckBox"
+        android:gravity="center"/>
+
+    <!-- single todo item description -->
+    <EditText
+        android:id="@+id/todo_list_checked_item_text_field"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checked_list_item_text_left_offset"
+        android:layout_marginTop="@dimen/checked_list_item_text_top_offset"
+        android:layout_marginEnd="@dimen/checked_list_item_text_left_offset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/todo_list_checkbox"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:hint="@string/description"
+        android:inputType="textNoSuggestions"
+        tools:text="@string/description"
+        android:autofillHints="" />
+
+    <!-- single todo item delete icon -->
+    <ImageView
+        android:id="@+id/todo_list_checked_item_delete_icon"
+        android:layout_width="@dimen/delete_icon_height"
+        android:layout_height="@dimen/delete_icon_width"
+        android:layout_marginRight="@dimen/list_item_cell_offset"
+        android:layout_marginEnd="@dimen/list_item_cell_offset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/todo_list_checked_item_text_field"
+        app:srcCompat="@drawable/ic_close"
+        android:visibility="invisible"
+        android:contentDescription="@string/todo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

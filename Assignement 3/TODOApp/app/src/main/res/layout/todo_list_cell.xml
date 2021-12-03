@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bordered_rectangle">
+
+    <!-- single todo list task title -->
+    <TextView
+        android:id="@+id/todo_list_cell_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_text_field_offset"
+        android:layout_marginTop="@dimen/search_text_field_top_offset"
+        android:layout_marginEnd="@dimen/search_text_field_offset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/todo_item_title"
+        android:textSize="@dimen/search_text_size"
+        android:textStyle="bold" />
+
+    <!-- todo list task layout -->
+    <LinearLayout
+        android:id="@+id/todo_list_cell_layout"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_screen_offset"
+        android:layout_marginTop="@dimen/list_item_cell_offset"
+        android:layout_marginEnd="@dimen/view_screen_offset"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo_list_cell_title" />
+
+    <!-- todo list checked tasks count -->
+    <TextView
+        android:id="@+id/todo_list_checked_cell_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checked_item_count_offset"
+        android:layout_marginLeft="@dimen/checked_item_count_offset"
+        android:layout_marginBottom="@dimen/checked_item_count_bottom_offset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/todo_list_cell_layout"
+        tools:text="@string/checked_item_count_example" />
+
+    <!-- todo list unchecked tasks count -->
+    <TextView
+        android:id="@+id/todo_list_unchecked_cell_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/checked_item_count_offset"
+        android:layout_marginBottom="@dimen/checked_item_count_offset"
+        app:layout_constraintBottom_toTopOf="@+id/todo_list_checked_cell_count"
+        app:layout_constraintStart_toStartOf="@+id/todo_list_checked_cell_count"
+        app:layout_constraintTop_toBottomOf="@+id/todo_list_cell_layout"
+        tools:text="@string/unchecked_item_count_example" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

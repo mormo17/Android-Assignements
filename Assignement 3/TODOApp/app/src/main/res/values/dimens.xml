@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- search -->
+    <dimen name="search_text_field_height">60dp</dimen>
+    <dimen name="search_text_size">18sp</dimen>
+    <dimen name="search_text_field_offset">24dp</dimen>
+    <dimen name="search_text_field_top_offset">16dp</dimen>
+    <dimen name="search_box_padding">20dp</dimen>
+    <!-- icons -->
+    <dimen name="back_icon_height">30dp</dimen>
+    <dimen name="back_icon_width">30dp</dimen>
+    <dimen name="pin_icon_height">30dp</dimen>
+    <dimen name="pin_icon_width">30dp</dimen>
+    <dimen name="delete_icon_height">25dp</dimen>
+    <dimen name="delete_icon_width">25dp</dimen>
+    <dimen name="add_icon_width">30dp</dimen>
+    <dimen name="add_icon_height">30dp</dimen>
+
+    <!-- main page -->
+    <dimen name="main_page_list_item_horizontal_offset">16dp</dimen>
+    <dimen name="main_page_list_item_vertical_offset">8dp</dimen>
+    <dimen name="main_page_list_item_inter_offset">16dp</dimen>
+
+    <!-- recycler view -->
+    <dimen name="recycler_view_top_offset">16dp</dimen>
+    <dimen name="recycler_view_bottom_offset">16dp</dimen>
+    <dimen name="recycler_view_left_offset">16dp</dimen>
+    <dimen name="recycler_view_right_offset">16dp</dimen>
+
+    <!-- items -->
+    <dimen name="list_item_offset">8dp</dimen>
+    <dimen name="todo_item_offset">16dp</dimen>
+    <dimen name="list_item_cell_offset">8dp</dimen>
+    <dimen name="list_item_text_left_offset">8dp</dimen>
+    <dimen name="list_item_text_top_offset">4dp</dimen>
+    <dimen name="checked_list_item_text_top_offset">12dp</dimen>
+    <dimen name="checked_list_item_text_left_offset">8dp</dimen>
+    <dimen name="checked_item_count_offset">8dp</dimen>
+    <dimen name="checked_item_count_bottom_offset">12dp</dimen>
+    <dimen name="floating_button_border_width">0dp</dimen>
+
+    <!-- separator -->
+    <dimen name="separator_left_offset">0dp</dimen>
+    <dimen name="separator_right_offset">0dp</dimen>
+    <dimen name="separator_top_offset">20dp</dimen>
+    <dimen name="separator_bottom_offset">20dp</dimen>
+
+    <!-- others -->
+    <dimen name="zero">0dp</dimen>
+    <dimen name="pinned_text_offset">24dp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="view_screen_offset">16dp</dimen>
+    <dimen name="rounding_radius">10dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details_Label">DETAILS</string>
+    <string name="details_temperature_label">Temperature</string>
+    <string name="details_feels_like_label">Feels Like</string>
+    <string name="details_humidity_label">Humidity</string>
+    <string name="details_pressure_label">Pressure</string>
+    <string name="default_blank_text"></string>
+    <string name="default_weather_desc">Broken Clouds</string>
+    <string name="default_temperature">5C</string>
+    <string name="default_date">16 AM 16 MAY</string>
+    <string name="default_pressure">1010</string>
+    <string name="initial_city">TBILISI</string>
+    <string name="todo">TODO</string>
+</resources>

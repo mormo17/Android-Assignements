@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- todo list fragment page toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:minHeight="?attr/actionBarSize" />
+
+    <!-- todo list fragment page toolbar back icon-->
+    <ImageView
+        android:id="@+id/todo_list_back_icon"
+        android:layout_width="@dimen/back_icon_width"
+        android:layout_height="@dimen/back_icon_height"
+        android:layout_marginLeft="@dimen/view_screen_offset"
+        android:layout_marginStart="@dimen/view_screen_offset"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="@string/todo" />
+
+    <!-- todo list fragment page toolbar pin icon -->
+    <ImageView
+        android:id="@+id/todo_list_pin_icon"
+        android:layout_width="@dimen/pin_icon_width"
+        android:layout_height="@dimen/pin_icon_height"
+        android:layout_marginRight="@dimen/view_screen_offset"
+        android:layout_marginEnd="@dimen/view_screen_offset"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_pin"
+        android:contentDescription="@string/todo" />
+
+    <!-- todo list fragment page progress bar -->
+    <ProgressBar
+        android:id="@+id/todo_list_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- todo list fragment page scroll view -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_marginStart="@dimen/view_screen_offset"
+        android:layout_marginEnd="@dimen/view_screen_offset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/todos_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

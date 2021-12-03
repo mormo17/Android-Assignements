@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/current_weather_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CurrentWeatherPage">
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="@dimen/weather_icon_width"
+            android:layout_height="@dimen/weather_icon_height"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temperature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/temperature_label_offset_from_top"
+            tools:text="@string/default_temperature"
+            android:textColor="@color/white"
+            android:textSize="@dimen/temperature_label_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_icon" />
+
+        <TextView
+            android:id="@+id/weather_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/weather_desc_offset_from_top"
+            tools:text="@string/default_weather_desc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/weather_desc_label_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperature_label" />
+
+        <!-- Details -->
+        <TextView
+            android:id="@+id/details_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_layout_offset_from_left"
+            android:layout_marginLeft="@dimen/details_layout_offset_from_left"
+            android:layout_marginTop="@dimen/details_layout_offset_from_top"
+            android:text="@string/details_Label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_title_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_desc" />
+
+        <!-- Temperature -->
+        <TextView
+            android:id="@+id/details_temperature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_layout_offset_from_left"
+            android:layout_marginLeft="@dimen/details_layout_offset_from_left"
+            android:layout_marginTop="@dimen/details_layout_items_margin"
+            android:text="@string/details_temperature_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_keys_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_label" />
+
+        <!-- Feels Like -->
+        <TextView
+            android:id="@+id/details_feels_like_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_layout_offset_from_left"
+            android:layout_marginLeft="@dimen/details_layout_offset_from_left"
+            android:layout_marginTop="@dimen/details_layout_items_margin"
+            android:text="@string/details_feels_like_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_keys_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_temperature_label" />
+
+        <!-- Humidity -->
+        <TextView
+            android:id="@+id/details_humidity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_layout_offset_from_left"
+            android:layout_marginLeft="@dimen/details_layout_offset_from_left"
+            android:layout_marginTop="@dimen/details_layout_items_margin"
+            android:text="@string/details_humidity_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_keys_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_feels_like_label" />
+
+        <!-- Pressure -->
+        <TextView
+            android:id="@+id/details_pressure_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_layout_offset_from_left"
+            android:layout_marginLeft="@dimen/details_layout_offset_from_left"
+            android:layout_marginTop="@dimen/details_layout_items_margin"
+            android:text="@string/details_pressure_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_keys_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_humidity_label" />
+
+        <!-- Temperature Value -->
+        <TextView
+            android:id="@+id/details_temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/details_layout_offset_from_right"
+            android:layout_marginRight="@dimen/details_layout_offset_from_right"
+            android:text="@string/default_temperature"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_values_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/details_temperature_label" />
+
+        <!-- Feels Like Value -->
+        <TextView
+            android:id="@+id/details_feels_like_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/details_layout_offset_from_right"
+            android:layout_marginRight="@dimen/details_layout_offset_from_right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_values_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/details_feels_like_label"
+            tools:text="@string/default_temperature" />
+
+        <!-- Humidity Value -->
+        <TextView
+            android:id="@+id/details_humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/details_layout_offset_from_right"
+            android:layout_marginRight="@dimen/details_layout_offset_from_right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_values_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/details_humidity_label"
+            tools:text="74%" />
+
+        <!-- Pressure Value -->
+        <TextView
+            android:id="@+id/details_pressure_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/details_layout_offset_from_right"
+            android:layout_marginRight="@dimen/details_layout_offset_from_right"
+            android:text="@string/default_pressure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/details_values_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/details_pressure_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

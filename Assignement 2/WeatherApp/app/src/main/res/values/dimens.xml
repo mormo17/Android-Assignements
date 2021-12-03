@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Current Weather Page -->
+    <dimen name="flag_icon_width">50dp</dimen>
+    <dimen name="flag_icon_height">50dp</dimen>
+    <dimen name="weather_icon_width">100dp</dimen>
+    <dimen name="weather_icon_height">100dp</dimen>
+    <dimen name="flag_icons_offset_from_top">16dp</dimen>
+    <dimen name="city_name_offset_from_flag">32dp</dimen>
+    <dimen name="city_name_size">16sp</dimen>
+
+    <dimen name="temperature_label_size">48sp</dimen>
+    <dimen name="temperature_label_offset_from_top">16dp</dimen>
+
+    <dimen name="weather_desc_label_size">16sp</dimen>
+    <dimen name="weather_desc_offset_from_top">16dp</dimen>
+
+    <dimen name="details_layout_offset_from_top">32dp</dimen>
+    <dimen name="details_layout_offset_from_left">16dp</dimen>
+    <dimen name="details_layout_offset_from_right">16dp</dimen>
+    <dimen name="details_layout_items_margin">16dp</dimen>
+
+    <dimen name="details_title_size">16sp</dimen>
+    <dimen name="details_keys_size">16sp</dimen>
+    <dimen name="details_values_size">16sp</dimen>
+
+    <dimen name="tab_layout_height">50dp</dimen>
+
+    <!-- Weather Forecast Page -->
+    <dimen name="weather_forecast_page_item_height">70dp</dimen>
+    <dimen name="weather_forecast_page_item_date_offset_from_left">16dp</dimen>
+    <dimen name="weather_forecast_page_item_date_size">16sp</dimen>
+    <dimen name="weather_forecast_page_item_weather_icon_height">50dp</dimen>
+    <dimen name="weather_forecast_page_item_weather_icon_width">50dp</dimen>
+    <dimen name="weather_forecast_page_item_weather_icon_offset_from_left">16dp</dimen>
+    <dimen name="weather_forecast_page_item_temperature_size">24sp</dimen>
+    <dimen name="weather_forecast_page_item_temperature_offset_from_left">16sp</dimen>
+    <dimen name="weather_forecast_page_item_weather_desc_size">16sp</dimen>
+    <dimen name="weather_forecast_page_item_weather_desc_offset_from_left">16sp</dimen>
+
+</resources>
